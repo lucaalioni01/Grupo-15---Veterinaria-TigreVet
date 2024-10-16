@@ -146,7 +146,7 @@ li:hover{
 
 
 /*cuando el dispositivo es como maximo de 700px*/
-@media all and (max-width:790px){
+@media all and (max-width:450px){
     /*Muestra todo el contenido de todas las etiquetas ul*/
     input:checked ~ ul{
         display: block;
