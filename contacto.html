@@ -23,21 +23,21 @@
     </header>
 
     <main>
-        <section class="nosotros">
-            <img src="img/perro1.png" class="perro1" alt="Perro con veterinario">
-            <h2>¿Quiénes Somos?</h2>
-            <p>En TigreVet somos una clínica veterinaria que ofrece servicios para mascotas y actividades de conservación.</p>
-            <p>Nuestra misión es cuidar y preservar la fauna que se encuentra en el Tigre, rescatando tanto animales que están en peligro de extinción como los que no, y los recuperamos al medio que pertenecen.</p>
-        </section>
-
-        <section class="donacion">
-            <img src="img/carpinchos.jpg"class="carpinchos" alt="Nutria en el agua">
-            <div class="donacion">
-                <h3>¡Apóyenos a cuidarlos!</h3>
-                <p>Tu donación ayuda a salvar vidas y proteger la fauna del Tigre. Cualquier ayuda o aporte hace una gran diferencia para ellos.</p>
-                <button>Donar</button>
-            </div>
-        </section>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                
+                <button type="button" id="enviar">Enviar</button>
+            </form>
+        </div>
+        
     </main>
 
     <footer>

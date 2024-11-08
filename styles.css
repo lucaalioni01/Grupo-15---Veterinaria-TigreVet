@@ -1,200 +1,216 @@
-body {
-    font-family: 'Itim', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #10520F;
-    color: #FFFFFF;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #10520F;
+    justify-content: space-between;
+    background-color: #A5D8A2;
+    padding: 10px 20px;
 }
 
 .logo img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
+    height: 100px;
 }
 
 nav ul {
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
-}
-
-.info p {
-    margin: 0.5rem 0;
-}
-
-
-.card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #D9D9D9;
-    padding: 1.5rem;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 2rem auto;
-    color: #10520F;
-    flex-wrap: wrap;
-}
-
-.color-info, .font-info {
-    text-align: center;
-    margin: 0.5rem;
-}
-
-.color-box {
-    width: 50px;
-    height: 50px;
-    margin: 0.5rem auto;
-}
-
-.logo-img p {
     font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.nosotros {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-/* Menú hamburguesa */
-.hamburger {
-    display: none;
-    font-size: 30px;
+.perro1 {
+    width: 100%;
+    max-width:700px;
+    max-height: 420px;
+    border-radius: 10px;
+}
+
+.nosotros h2 {
+    margin-top: 20px;
+    color: #A5D8A2;
+}
+
+.donacion {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #DFF0D8;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.carpinchos {
+    width: 1000px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.donacion h3 {
+    color: #3D683D;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.donacion p {
+    margin: 0;
+}
+
+.donacion button {
+    background-color: #A5D8A2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
-    padding: 10px;
-    background-color: #AB8752;
-    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
-.menu-diagram img {
-    max-width: 70%;
-    height: 200px;
-    margin: 2rem 0;
+.donacion button:hover {
+    background-color: #7EB77D;
 }
-
-.roles {
-    margin: 2rem 0;
-}
-
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background-color: #10520F;
-    padding: 1rem 0;
-    margin-top: auto; 
+    background-color: #A5D8A2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
 }
 
-footer a {
-    color: #FFFFFF;
-    text-decoration: none;
+
+
+/*contacto*/
+.contact-form {
+    background-color: #FFFFFF;
+    color: #0C0225;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
 }
 
-/*-->Botones y navegacion<--*/
-/*Color de fondo de los botones*/
-nav{
-    background: #10520F;
-    overflow: hidden;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-}
-/*No muestra el botón de menú*/
-input{
-    display: none;
-}
-/*No muestra la hamburguesa*/
-label{
-    display: none;
-}
-/*Muestra los botones con la disposición horizontal para notebook*/
-ul{
-    display: flex;
-    justify-content: center;
-    margin-top:0;
-    padding:0;
-}
-/*propiedad de cada boton*/
-li{
+.contact-form label {
     display: block;
-    background: #10520F;
-    margin: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 95%;
     padding: 10px;
-    list-style: none;
-    border-radius: 50px;
-}
-/*Estilo boton con el mouse arriba*/
-li:hover{
-    filter:brightness(110%);
-    background: #999898;
-    border-bottom:0.5px solid #10520F;
+    margin-top: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #0C0225;
 }
 
-
-/*cuando el dispositivo es como maximo de 700px*/
-@media all and (max-width:600px){
-    /*Muestra todo el contenido de todas las etiquetas ul*/
-    input:checked ~ ul{
-        display: block;
-        position: static;
-        margin-top:10px;
-    }
-    /*Cambia la forma de ver los elementos del nav*/
-    nav {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-    /*Muestra el contenido de las etiquetas label*/
-    input:checked ~ label{
-        background: #999898;
-    }
-    /*Cambia el color de la hamburguesa*/
-    label:hover{
-        background:#999898;
-    }
-    /*Elimina el margen de los botones*/
-    li{
-        margin: 0; /* Elimina el margen de los botones */
-        border-radius: 0; /* Elimina el borde redondeado en los botones */
-        border-top: 1px solid #10520F; /* Agrega un borde superior para separar los botones */
-    }
-    /*Dibuja la hamburguesa como botón*/
-    label{
-        display: block; /* Mostrar el botón de hamburguesa */
-        cursor: pointer;
-        background-color: #10520F;
-        border-radius: 20px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-        margin: 10px;
-    }
-    /*Deja de mostrar el bloque contenedor de los botones horizontales*/
-    ul{
-        display: none; /* Ocultar la lista de enlaces inicialmente */
-        background-color: #10520F;
-        width: 100%;
-        text-align: center;
-    }
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #CCCCCC;
 }
 
+.contact-form button {
+    background-color: #0C0225;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
- 
+.contact-form button:hover {
+    background-color: #1a1a40;
+}
+
+.nuestros_servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articulos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.articulo {
+    text-align: center;
+    width: 200px;
+}
+
+.articulo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.articulo p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.preguntas-frecuentes {
+    max-width: 800px;
+    margin: auto;
+}
+
+.preguntas-frecuentes h2 {
+    color: #3D683D;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.pregunta {
+    margin-bottom: 20px;
+}
+
+.pregunta strong {
+    color: #3D683D;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.pregunta p {
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
