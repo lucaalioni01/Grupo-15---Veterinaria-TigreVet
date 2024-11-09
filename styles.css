@@ -101,6 +101,7 @@ main {
 .donacion p {
     margin: 0 ;
     font-size: 17px;
+ 
 }
 
 .donacion button {
@@ -118,7 +119,7 @@ main {
 }
 
 .donacion button:hover {
-    background-color: black;
+    background-color: rgb(140, 207, 150);
     color: #FFFFFF;
 }
 
@@ -130,12 +131,21 @@ footer {
     font-size: 14px;
 }
 
+footer p{
+    display:inline-block;
+    justify-content: space-between;
+}
+
+.divh1{
+    display: block;
+    text-align: center;
+}
 
 
 /*contacto*/
 .contact-form {
     background-color: #FFFFFF;
-    color: #0C0225;
+    color: #87ab87;
     border-radius: 15px;
     padding: 60px;
     margin: 20px auto;
@@ -165,7 +175,7 @@ footer {
 }
 
 .contact-form button {
-    background-color: #0C0225;
+    background-color: #87ab87;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -176,7 +186,7 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #1a1a40;
+    background-color: #2b2b2b;
 }
 
 .nuestros_servicios{
@@ -206,7 +216,7 @@ footer {
     display:flex;
     gap: 90px;
     margin: 40px;
-    align-items: center;
+    align-items:center;
 
     
 }
@@ -267,4 +277,39 @@ footer {
     margin-left: 10px;
     font-size: 16px;
     line-height: 1.5;
+}
+
+#scrollToTop {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambia el color al pasar el cursor */
+#scrollToTop:hover {
+    background-color: #A5D4A5;
+}
+
+.div-maps{
+    border-radius: 15px;
+    color: #87ab87;
+    padding: 60px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.maps{
+    width:100%;
+    height:300px;
+    justify-content: "center";
 }

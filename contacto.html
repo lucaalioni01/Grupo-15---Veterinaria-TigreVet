@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TigreVet</title>
+    <title>Contacto - TigreVet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logoveterinaria.jpeg" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/logoveterinaria.jpeg" alt="Logo TigreVet">
+            <a href="index.html" ><img src="img/logoveterinaria.jpeg" alt="Logo TigreVet" > </a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="#">Citas en línea</a></li>
                 <li><a href="educativos.html">Recursos Educativos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -23,6 +23,11 @@
     </header>
 
     <main>
+        <P style="display: contents; color: rgb(122, 122, 122);">Inicio > Contacto</P>
+        <div class="divh1">
+            <h1 style="color: #87ab87;">Contacto</h1>
+            <p>Para cualquier duda o consulta podes llenar el siguiente formulario y nos estaremos contactando a la brevedad!</p>
+        </div>
         <div class="contact-form">
             <form action="#" method="post">
                 <label for="name">Nombre</label>
@@ -36,8 +41,13 @@
                 
                 <button type="button" id="enviar">Enviar</button>
             </form>
+            
         </div>
-        
+        <div class="div-maps">
+            <p>Dirreccion: Lima 757</p>
+            <!----><iframe class="maps" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Lima%20757,%20C1073%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires+(TigreVet%20-%20direccion)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe>
+        </div>
+        <button id="scrollToTop" style="color: #fff;">Top</button>
     </main>
 
     <footer>
@@ -48,5 +58,7 @@
             <p>UADE - Tecnologías de la Web</p>
         </div>
     </footer>
+    <script src="scroll.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
