@@ -14,3 +14,7 @@ window.onscroll = function() {
 scrollToTop.addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+function toggleMenu() {
+    document.querySelector("header").classList.toggle("show-menu");
+}

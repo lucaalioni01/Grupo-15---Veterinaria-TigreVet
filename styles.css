@@ -294,7 +294,7 @@ footer p{
     cursor: pointer;
 }
 
-/* Cambia el color al pasar el cursor */
+
 #scrollToTop:hover {
     background-color: #A5D4A5;
 }
@@ -312,4 +312,119 @@ footer p{
     width:100%;
     height:300px;
     justify-content: "center";
+}
+.menu-toggle {
+    display: none; /* Oculta el menu hamburguesa */
+}
+
+
+
+/* Responsive  */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .menu-toggle {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .show-menu nav ul {
+        display: flex;
+    }
+
+   
+    .donacion {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .donaciontexto, .carpinchos {
+        max-width: 80%;
+        margin: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul li a {
+        font-size: medium;
+    }
+
+    .nosotros h2 {
+        font-size: 30px;
+    }
+
+    .donacion h3 {
+        font-size: 20px;
+    }
+
+    .donacion p {
+        font-size: 15px;
+    }
+    /*servicios*/
+    .nuestros_servicios img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .servicios ul {
+        font-size: 14px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .servicios ul li {
+        margin-bottom: 10px;
+    }
+    .nuestros_servicios h1 {
+        font-size: 24px;
+    }
+
+
+    /*educa*/
+    .articulos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articulo {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .articulo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .preguntas-frecuentes {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .preguntas-frecuentes h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .pregunta strong {
+        font-size: 16px;
+    }
+
+    .pregunta p {
+        font-size: 14px;
+    }
 }
